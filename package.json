@@ -1,4 +1,13 @@
 {
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Gao Qi's cv",
+  "author": "Taki",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MisterTaki/Resume"
+  },
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
