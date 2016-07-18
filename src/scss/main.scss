@@ -1,0 +1,141 @@
+@import "_reset";
+@import "_loading";
+@import "_grid.variables";
+@import "_grid.mixin";
+@import "_grid";
+.section {
+  background-color: #45A1DE;
+  text-align: center;
+}
+.section.leaving {
+  background-color: #4ec7c4;
+}
+h1 {
+  margin: 10px 0 30px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  text-indent: 10px;
+  text-shadow: 1px 2px #45A1DE,2px 4px #fff;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 10;
+}
+#navigation {
+  position: absolute;
+  margin: 20px;
+  z-index: 100;
+  width: 34%;
+  ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+#home {
+  .avatar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    .border,
+    .mask,
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    .border {
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 10px solid #2980B9;
+      border-top-color: #fff;
+      border-right-color: #fff;
+      transition: all 0.5s ease-in;
+    }
+    .mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: rgba(255,255,255,0);
+      transition: all 0.5s ease-in;
+      line-height: 200px;
+    }
+    &:hover .border {
+      transform: rotate(180deg);
+    }
+    &:hover .mask {
+      background-color: rgba(0,0,0,0.5);
+      color: rgba(255,255,255,1);
+    }
+  }
+  h2 {
+    color: #9ACFF2;
+    font-size: 20px;
+  }
+  h3 {
+    color: #fff;
+    margin: 14px;
+    font-size: 24px;
+  }
+  h4 {
+    color: #28506c;
+    font-size: 18px;
+  }
+}
+#education {
+  h2 {
+    color: #fff;
+    font-size: 30px;
+    margin: 8px;
+  }
+  h3 {
+    margin-top: 16px;
+    color: #9ACFF2;
+    font-size: 20px;
+  }
+}
+#skill {
+  .tag {
+    margin: 20px auto;
+  }
+  .tag-item {
+    color: #45A1DE;
+    display: inline-block;
+    background-color: #28506c;
+    padding: 4px 8px;
+    margin: 0 4px;
+    font-size: 18px;
+    border-radius: 4px;
+    opacity: 0.8;
+  }
+  .opacity {
+    opacity: 0.6;
+  }
+}
+#project {
+  h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  h3 {
+    color: #9ACFF2;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  p {
+    color: #28506c;
+    font-size: 18px;
+    margin: 5px 0;
+  }
+}
