@@ -1,0 +1,28 @@
+#navigation {
+  position: absolute;
+  margin: 20px;
+  z-index: 100;
+  width: 34%;
+  .cur-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 2px;
+    background-color: #fff;
+  }
+  ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li a {
+      display: block;
+      padding: 6px 2px;
+      &:hover {
+        animation: verical-slow 10s ease-in-out infinite;
+        font-size: 18px;
+        transition: all .5s ease-in;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.tag {
+  margin: 20px auto;
+}
+.tag-item {
+  color: $background-color;
+  display: inline-block;
+  background-color: $deep-color;
+  padding: 4px 8px;
+  margin: 0 4px;
+  font-size: 18px;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+.tag .opacity {
+  opacity: 0.6;
+}

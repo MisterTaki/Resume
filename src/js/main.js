@@ -1,4 +1,7 @@
 $(function () {
+  //隐藏载入动画
+  $('#loading').fadeOut(800);
+  //配置particlesJS
   var config = {
     "particles": {
       "number": {
@@ -109,16 +112,27 @@ $(function () {
     },
     "retina_detect": true
   };
-  particlesJS('home', config);
-  particlesJS('education', config);
-  particlesJS('skill', config);
-  particlesJS('project', config);
-  particlesJS('opus', config);
-  particlesJS('more', config);
-  $('#loading').fadeOut(800);
+  //定义anchors
+  var anchors = {
+    one : "home",
+    two : "education",
+    three : "skill",
+    four : "project",
+    five : "opus",
+    six : "more"
+  };
+  //初始化particlesJS
+  for (var key in anchors) {
+    if (anchors.hasOwnProperty(key)) {
+      particlesJS(anchors[key], config);
+    }
+  }
+  //初始化fullpage
   $('#fullpage').fullpage({
     navigation: true,
-    anchors: ['one', 'two', 'three', 'four', 'five', 'six'],
+    anchors: Object.keys(anchors),
+    navigationPosition: 'right',
+    navigationTooltips: ['首页', '教育背景', '专业技能', '项目经历', '个人作品', '更多信息'],
     onLeave: function (index, nextIndex, direction) {
       var $pages = $('.section');
       for (var i = 0; i < $pages.length; ++i) {
@@ -128,6 +142,7 @@ $(function () {
           $($pages[i]).removeClass('leaving');
         }
       }
+      switchCur(nextIndex-1);
     }
   });
 });

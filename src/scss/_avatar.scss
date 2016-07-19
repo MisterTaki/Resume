@@ -1,0 +1,38 @@
+.avatar {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  .border,
+  .mask,
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .border {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 10px solid $avatar-border-color;
+    border-top-color: #fff;
+    border-right-color: #fff;
+    transition: all .5s ease-in;
+  }
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(255,255,255,0);
+    transition: all 0.5s ease-in;
+    line-height: 200px;
+  }
+  &:hover .border {
+    transform: rotate(180deg);
+  }
+  &:hover .mask {
+    background-color: rgba(0,0,0,0.5);
+    color: rgba(255,255,255,1);
+  }
+}
