@@ -107,7 +107,7 @@ gulp.task('zip', function() {
 
 // 清理
 gulp.task('clean', function() {
-    return gulp.src('dist/!(lib)**/*', {
+    return gulp.src('dist/!(lib)(cv)**/*', {
             read: false
         })
         .pipe(clean());

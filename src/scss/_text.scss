@@ -10,9 +10,13 @@
   }
   a {
     font-size: 18px;
+    color: $deep-color;
+    transition: color .5s ease;
+    &:hover {
+        color: $hover-color;
+    }
   }
 }
-
 #education {
   h2 {
     color: #fff;
@@ -25,7 +29,6 @@
     font-size: 20px;
   }
 }
-
 #project {
   h2 {
     color: #fff;
@@ -42,5 +45,19 @@
     color: $deep-color;
     font-size: 18px;
     margin: 5px 0;
+  }
+}
+#more {
+  h2 {
+    color: $hover-color;
+    font-size: 32px;
+    display: inline-block;
+  }
+  h3 {
+    color: $deep-color;
+    font-size: 20px;
+    span {
+      color: #fff;
+    }
   }
 }
