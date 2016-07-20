@@ -132,7 +132,7 @@ $(function () {
     navigation: true,
     anchors: Object.keys(anchors),
     navigationPosition: 'right',
-    navigationTooltips: ['首页', '教育背景', '专业技能', '项目经历', '个人作品', '更多信息'],
+    navigationTooltips: ['首页', '教育背景', '专业技能', '项目经历', '个人作品', '更多'],
     onLeave: function (index, nextIndex, direction) {
       var $pages = $('.section');
       for (var i = 0; i < $pages.length; ++i) {

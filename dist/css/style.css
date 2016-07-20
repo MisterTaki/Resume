@@ -211,3 +211,11 @@ h1 { margin: 10px 0 30px; color: #fff; font-size: 60px; font-weight: bold; lette
 .opus-list li a:hover .mask { background-color: #000; opacity: .4; }
 
 .opus-list li h2 { padding: 18px 0; color: #fff; font-size: 24px; }
+
+.links li { display: inline-block; margin: 0 10px; }
+
+.links li a { display: block; width: 40px; height: 40px; padding: 6px; background-color: #28506c; border-radius: 50%; -webkit-transition: all .5s ease; transition: all .5s ease; opacity: .6; }
+
+.links li a img { width: 100%; }
+
+.links li a:hover { border-radius: 8px; opacity: .8; }
