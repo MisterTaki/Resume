@@ -1,17 +1,22 @@
 # My Resume
-> *Web Front-End Engineer*
+> Web Front-End Engineer
 
+## Todo
+- [x] basically completed
+- [ ] better interface
+- [ ] better interaction
+- [ ] response
 
-#### Third-party library && plugins
+## Third-party library & plugins
 - jquery-3.1.0
 - fullPage
 - particles
 
-#### Tools
+## Tools
 - Gulp
 - Scss
 
-#### Installation
+## Installation
 
 ```
 npm install
