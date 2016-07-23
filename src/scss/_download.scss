@@ -1,0 +1,15 @@
+.download {
+  display: inline-block;
+  margin-bottom: 16px;
+  a {
+    font-size: 22px;
+    &:hover{
+      color: $deep-color;
+    }
+  }
+  &::before {
+    content: "";
+    margin: 10px;
+    border-right: 4px solid #fff;
+  }
+}

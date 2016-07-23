@@ -1,0 +1,23 @@
+.links {
+  li {
+    display: inline-block;
+    margin: 20px 10px;
+    a {
+      display: block;
+      width: 40px;
+      height: 40px;
+      padding: 6px;
+      background-color: $deep-color;
+      border-radius: 50%;
+      transition: all .5s ease;
+      opacity: .6;
+      img {
+        width: 100%;
+      }
+      &:hover {
+        border-radius: 8px;
+        opacity: .8;
+      }
+    }
+  }
+}

@@ -160,7 +160,9 @@ h1 { margin: 10px 0 30px; color: #fff; font-size: 60px; font-weight: bold; lette
 
 #home h3 { color: #fff; margin: 14px; font-size: 24px; }
 
-#home a { font-size: 18px; }
+#home a { font-size: 18px; color: #28506c; -webkit-transition: color .5s ease; transition: color .5s ease; }
+
+#home a:hover { color: #baee95; }
 
 #education h2 { color: #fff; font-size: 30px; margin: 8px; }
 
@@ -171,6 +173,12 @@ h1 { margin: 10px 0 30px; color: #fff; font-size: 60px; font-weight: bold; lette
 #project h3 { color: #9ACFF2; font-size: 20px; margin: 10px 0; }
 
 #project p { color: #28506c; font-size: 18px; margin: 5px 0; }
+
+#more h2 { color: #baee95; font-size: 32px; display: inline-block; }
+
+#more h3 { color: #28506c; font-size: 20px; }
+
+#more h3 span { color: #fff; }
 
 .avatar { position: relative; width: 200px; height: 200px; margin: 0 auto; }
 
@@ -190,10 +198,6 @@ h1 { margin: 10px 0 30px; color: #fff; font-size: 60px; font-weight: bold; lette
 
 .tag .opacity { opacity: 0.6; }
 
-.link { color: #28506c; }
-
-.link:hover { color: #baee95; -webkit-transition: color .5s ease; transition: color .5s ease; }
-
 .opus-list { width: 1000px; margin-top: 50px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; z-index: 10; }
 
 .opus-list li a { display: block; position: relative; width: 400px; border: 8px solid #2980B9; background-color: #45A1DE; -webkit-box-shadow: 0px 2px 4px 4px rgba(0, 0, 0, 0.28); box-shadow: 0px 2px 4px 4px rgba(0, 0, 0, 0.28); }
@@ -212,7 +216,15 @@ h1 { margin: 10px 0 30px; color: #fff; font-size: 60px; font-weight: bold; lette
 
 .opus-list li h2 { padding: 18px 0; color: #fff; font-size: 24px; }
 
-.links li { display: inline-block; margin: 0 10px; }
+.download { display: inline-block; margin-bottom: 16px; }
+
+.download a { font-size: 22px; }
+
+.download a:hover { color: #28506c; }
+
+.download::before { content: ""; margin: 10px; border-right: 4px solid #fff; }
+
+.links li { display: inline-block; margin: 20px 10px; }
 
 .links li a { display: block; width: 40px; height: 40px; padding: 6px; background-color: #28506c; border-radius: 50%; -webkit-transition: all .5s ease; transition: all .5s ease; opacity: .6; }
 
